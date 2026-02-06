@@ -11,7 +11,6 @@ Bash Forge is **not** a Bash parser or interpreter. It is a controlled
 macro processor that rewrites a small, well-defined set of idioms into
 standard, portable Bash.
 
-------------------------------------------------------------------------
 
 ## Design Philosophy
 
@@ -25,7 +24,6 @@ standard, portable Bash.
 Bash Forge emphasizes clarity and structural correctness over
 convenience shortcuts.
 
-------------------------------------------------------------------------
 
 ## Core Concepts
 
@@ -68,8 +66,6 @@ Supported identifier types:
 | `:<class>:<method>` | Method    |
 
 
-------------------------------------------------------------------------
-
 ### 2. Source Tree Model
 
 Projects are rooted by a `.bfroot` file.
@@ -90,7 +86,6 @@ Traversal order:
 3.  `*.sh`
 4.  Recurse
 
-------------------------------------------------------------------------
 
 ### 3. Compilation Contexts
 
@@ -105,7 +100,6 @@ Bash Forge operates with multiple controlled contexts:
 
 Each context enforces strict rules to preserve determinism.
 
-------------------------------------------------------------------------
 
 ### 4. Annotations
 
@@ -122,7 +116,6 @@ Compilation occurs in two phases:
 1.  Expansion without annotation execution
 2.  Annotation-driven modification
 
-------------------------------------------------------------------------
 
 ### 5. Object System
 
@@ -144,7 +137,6 @@ Example:
 
 This subsystem is currently experimental.
 
-------------------------------------------------------------------------
 
 ### 6. Lambdas and Plugins
 
@@ -156,7 +148,6 @@ Anonymous code blocks can be embedded as callable objects.
 
 Used primarily for plugin-style extensibility.
 
-------------------------------------------------------------------------
 
 ### 7. Redirection Layer
 
@@ -170,7 +161,6 @@ Symbolic file descriptors are provided for structured I/O.
   `(>data)`  |data
   `(>log)`   |log
 
-------------------------------------------------------------------------
 
 ### 8. Try / Catch / Throw
 
@@ -183,7 +173,6 @@ aliases.
 
 Implemented using `ERR` traps and scoped execution contexts.
 
-------------------------------------------------------------------------
 
 ## Build Process
 
@@ -199,7 +188,6 @@ High-level compilation pipeline:
 
 Output is typically a single, standalone Bash script.
 
-------------------------------------------------------------------------
 
 ## Tooling
 
@@ -216,7 +204,6 @@ Planned subcommands:
 
 All functionality is exposed through a unified CLI.
 
-------------------------------------------------------------------------
 
 ## Indirection Table
 
@@ -232,7 +219,6 @@ Benefits:
 
 Optional "final form" builds may strip this table.
 
-------------------------------------------------------------------------
 
 ## Security and Reproducibility
 
@@ -245,7 +231,6 @@ Bash Forge emphasizes:
 
 Future versions will support hermetic build modes.
 
-------------------------------------------------------------------------
 
 ## Project Status
 
@@ -260,13 +245,11 @@ Current focus:
 
 Public API stability is not yet guaranteed.
 
-------------------------------------------------------------------------
 
 ## License
 
 To be determined.
 
-------------------------------------------------------------------------
 
 ## Contact
 
