@@ -45,8 +45,6 @@ Examples:
 
 Supported namespace forms:
 
-Supported namespace forms:
-
 | Form                   | Meaning                  |
 |------------------------|--------------------------|
 | `(@com.acme)`          | Reverse-DNS root         |
@@ -255,6 +253,5 @@ To be determined.
 
 Project maintained by Steve Amerige.
 
-Affiliated with AgriCommons Foundation and NC State University research
-initiatives.
+Affiliated with AgriCommons Foundation initiatives.
 
