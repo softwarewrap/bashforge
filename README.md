@@ -64,7 +64,7 @@ Supported identifier types:
 | `:<name>`           | Function  |
 | `_<name>`           | Variable  |
 | `/<path>`           | Path      |
-| `:<class>:          | Class     |
+| `:<class>:`         | Class     |
 | `:<class>:<method>` | Method    |
 
 
