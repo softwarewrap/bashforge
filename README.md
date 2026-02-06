@@ -47,22 +47,25 @@ Examples:
 
 Supported namespace forms:
 
-  Form                     Meaning
-  ------------------------ --------------------------
-  `(@com.acme)`            Reverse-DNS root
-  `(@com.acme:db.mysql)`   Package
-  `(@)`                    Current file package
-  `(@@)`                   System namespace
-  `(.)`                    Function-local namespace
+Supported namespace forms:
+
+| Form                   | Meaning                  |
+|------------------------|--------------------------|
+| `(@com.acme)`          | Reverse-DNS root         |
+| `(@com.acme:db.mysql)` | Package                  |
+| `(@)`                  | Current file package     |
+| `(@@)`                 | System namespace         |
+| `(.)`                  | Function-local namespace |
 
 Supported identifier types:
 
-  Type                  Meaning
-  --------------------- ----------
-  `:<name>`             Function
-  `_<name>`             Variable
-  `/<path>`             Path
-  `:<class>:<method>`   Method
+| Type                | Meaning   |
+|---------------------|-----------|
+| `:<name>`           | Function  |
+| `_<name>`           | Variable  |
+| `/<path>`           | Path      |
+| `:<class>:<method>` | Method    |
+
 
 ------------------------------------------------------------------------
 
@@ -92,12 +95,12 @@ Traversal order:
 
 Bash Forge operates with multiple controlled contexts:
 
-  Context              Purpose
-  -------------------- -------------------------------
-  Init Context         Directory-level configuration
-  Config Context       Compile-time behavior
-  Code Context         Program definitions
-  Annotation Context   Code transformation
+  Context             |Purpose
+  --------------------|-------------------------------
+  Init Context        |Directory-level configuration
+  Config Context      |Compile-time behavior
+  Code Context        |Program definitions
+  Annotation Context  |Code transformation
 
 Each context enforces strict rules to preserve determinism.
 
@@ -158,13 +161,13 @@ Used primarily for plugin-style extensibility.
 
 Symbolic file descriptors are provided for structured I/O.
 
-  Symbol      Descriptor
-  ----------- ------------
-  `(<in)`     stdin
-  `(>out)`    stdout
-  `(>err)`    stderr
-  `(>data)`   data
-  `(>log)`    log
+  Symbol     |Descriptor
+  -----------|------------
+  `(<in)`    |stdin
+  `(>out)`   |stdout
+  `(>err)`   |stderr
+  `(>data)`  |data
+  `(>log)`   |log
 
 ------------------------------------------------------------------------
 
